@@ -1,0 +1,43 @@
+# === AMBIENTE VIRTUAL ===
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === DADOS ===
+# Evita versionar arquivos brutos e processados
+data/raw/
+data/interim/
+data/processed/
+
+# Mas permite versionar apenas exemplos de estrutura (caso queira manter pastas vazias)
+!data/.gitkeep
+
+# === NOTEBOOKS ===
+# Salva notebooks, mas ignora checkpoints
+notebooks/.ipynb_checkpoints/
+
+# === ARQUIVOS TEMPORÁRIOS ===
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# === CONFIGURAÇÕES DO VS CODE ===
+.vscode/
+.idea/
+
+# === ARQUIVOS DE USO LOCAL (não versionar) ===
+fazer.txt
+link_dataset_kaggle.txt
+
+# === DEPENDÊNCIAS ===
+# Mantém apenas requirements.txt
+*.egg-info/
+build/
+dist/
